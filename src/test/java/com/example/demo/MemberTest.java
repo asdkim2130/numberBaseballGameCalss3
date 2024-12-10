@@ -144,38 +144,7 @@ public class MemberTest {
 
     }
 
-    @Test
-    void Parenthesis () {
-        String s = "";
 
-
-
-        boolean solution (String s) {
-        boolean answer = true;
-
-        Stack<String> parenthesis = new Stack<>();
-        if (s.startsWith(")")) {
-            answer = false;
-        }
-        if (s.startsWith("(")) {
-            for (int i = 0; i < s.length(); i++) {
-                if (Character.toString(s.charAt(i)).equals("(")) {
-                    parenthesis.push("(");
-                }
-                if (Character.toString(s.charAt(i)).equals(")")) {
-                    parenthesis.pop();
-                }
-
-            }
-            if (parenthesis.size() != 0) {
-                answer = false;
-            }
-            answer = true;
-        }
-        return answer;
-
-    }
-    }
 
 
 

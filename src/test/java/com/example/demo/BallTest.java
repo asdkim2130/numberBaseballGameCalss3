@@ -34,5 +34,11 @@ public class BallTest {
         assertThat(computerBall.matchStatus(userBall)).isEqualTo(BallStatus.STRIKE);
     }
 
+    @Test
+    void incrementCount(){
 
+
+
+
+    }
 }
